@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Houzezfile",
+    "slug": "Houzezfile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myApp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#2f5e99"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hamzariazexpoeaslogin.Houzezfile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/Hamza.jpg",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.hamzariazexpoeaslogin.Houzezfile"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/Hamza.jpg"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "8019bdc8-08ee-46fb-90f2-607341c5a085"
+      }
+    }
+  }
+}
