@@ -71,7 +71,7 @@ const Setting_Privacy_Menu_Details = () => {
           </View>
         </View>
         <App_Feature/>
-        {/* <Gallery/> */}
+       
         <Pricing/>
         <Privacy_Contact/>
         <PrivacyUsefulLink/>

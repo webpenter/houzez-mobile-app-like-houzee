@@ -5,7 +5,7 @@ import Foundation from '@expo/vector-icons/Foundation';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import Entypo from '@expo/vector-icons/Entypo';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
-import EvilIcons from '@expo/vector-icons/EvilIcons'; // Added missing import
+import EvilIcons from '@expo/vector-icons/EvilIcons'; 
 import { useNavigation } from '@react-navigation/native';
 
 const NavigationKeyAllPages = () => {
@@ -33,7 +33,7 @@ const NavigationKeyAllPages = () => {
                     />
                     <View style={styles.iconContainer}>
                         <TouchableOpacity>
-                            <Foundation name="refresh" size={24} color="#2f5e99" style={styles.icon} />
+                            <Foundation name="refresh" size={24} color="#2f5e99"  />
                         </TouchableOpacity>
                         <TouchableOpacity>
                             <FontAwesome name="map-o" size={18} color="#2f5e99" style={styles.icon} />
@@ -84,8 +84,8 @@ const NavigationKeyAllPages = () => {
                 </View>
 
                 {/* 01 */}
-                <View style = {{paddingHorizontal : 6 , marginTop : 10 , marginBottom : 26}}>
-                    <TouchableOpacity>
+                <View style = {{paddingHorizontal : 10 , marginTop : 4 , marginBottom : 26}}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Relaxing')}>
                         <View style={styles.cardContainer}>
                             <Image
                                 source={require('../assets/images/kn01.jpg')}
@@ -127,7 +127,7 @@ const NavigationKeyAllPages = () => {
                         </View>
                     </TouchableOpacity>
                     {/* 02 */}
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('Comfortable')}>
                         <View style={styles.cardContainer}>
                             <Image
                                 source={require('../assets/images/kn6.jpg')}
@@ -169,7 +169,7 @@ const NavigationKeyAllPages = () => {
                         </View>
                     </TouchableOpacity>
                     {/* 03 */}
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('Design apartment')}>
                         <View style={styles.cardContainer}>
                             <Image
                                 source={require('../assets/images/kn5.jpg')}
@@ -211,7 +211,7 @@ const NavigationKeyAllPages = () => {
                         </View>
                     </TouchableOpacity>
                     {/* 04 */}
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('Relaxing')}>
                         <View style={styles.cardContainer}>
                             <Image
                                 source={require('../assets/images/kn4.jpg')}
@@ -253,7 +253,7 @@ const NavigationKeyAllPages = () => {
                         </View>
                     </TouchableOpacity>
                     {/* 05 */}
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('ample studio')}>
                         <View style={styles.cardContainer}>
                             <Image
                                 source={require('../assets/images/card05.jpg')}
@@ -295,7 +295,7 @@ const NavigationKeyAllPages = () => {
                         </View>
                     </TouchableOpacity>
                     {/* 06 */}
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('Comfortable')}>
                         <View style={styles.cardContainer}>
                             <Image
                                 source={require('../assets/images/card06.jpg')}
@@ -589,7 +589,7 @@ const NavigationKeyAllPages = () => {
                         </View>
                     </TouchableOpacity>
                 </View>
-                <View style = {{paddingHorizontal : 6 , marginTop : 10 , marginBottom : 26}}>
+                <View style = {{paddingHorizontal : 10 , marginTop : 10 , marginBottom : 26}}>
                     <TouchableOpacity>
                         <View style={styles.cardContainer}>
                             <Image
@@ -1105,7 +1105,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#f8f9fa',
-        marginTop : 34
+        marginTop : 28
     },
     headerContainer: {
         flexDirection: 'row',
@@ -1127,8 +1127,8 @@ const styles = StyleSheet.create({
     iconContainer: {
         flexDirection: 'row',
         alignItems: 'center',
-        gap: 6,
-        paddingBottom : 6
+        gap: 8,
+        // paddingBottom : 6
     },
     icon: {
         marginLeft: 10,
@@ -1258,4 +1258,8 @@ const styles = StyleSheet.create({
         marginRight: 10,
         
     },
+    icon : {
+        height :17,
+        width : 14,
+    }
 });

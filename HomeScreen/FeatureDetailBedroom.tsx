@@ -8,7 +8,7 @@ import Feather from '@expo/vector-icons/Feather';
 const FeatureDetailBedroom = () => {
   return (
     <View style={styles.container}>
-      <ScrollView showsHorizontalScrollIndicator = {false}>
+      <ScrollView showsHorizontalScrollIndicator={false} horizontal={true}>
         <View style={styles.featureList}>
           <View style={styles.featureItem}>
             <Ionicons name="bed-outline" size={19} color="#2f5e99" />
@@ -27,8 +27,8 @@ const FeatureDetailBedroom = () => {
             <Text style={styles.featureText}>4300 Sq Ft</Text>
           </View>
           <View style={styles.featureItem}>
-            <Feather name="calendar" size={19} color="black" />
-            <Text style={styles.featureText}>Available from August</Text>
+            <Feather name="calendar" size={19} color="#2f5e99" />
+            <Text style={styles.featureText}>Calendar</Text>
           </View>
         </View>
       </ScrollView>
@@ -42,27 +42,36 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
+    // backgroundColor: '#f7f8fa',
   },
   featureList: {
     flexDirection: 'row',
-    paddingHorizontal: 6,
-    gap : 16,
-    marginTop :8
+    paddingHorizontal: 10,
+    gap: 12,
+    marginTop: 10,
   },
   featureItem: {
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: '#ddd',
-    padding: 10,
+    padding: 12,
     borderRadius: 8,
     marginBottom: 10,
-    paddingVertical : 6
-  
+    height: 40,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.2,
+    shadowRadius: 2,
+    elevation: 2,
   },
   featureText: {
     marginLeft: 10,
     fontSize: 14,
-    color: '#333',
+    color: '#2f5e99',
+    fontWeight: '600',
   },
   iconImage: {
     width: 24,

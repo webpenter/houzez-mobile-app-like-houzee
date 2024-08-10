@@ -7,8 +7,8 @@ import { useNavigation } from '@react-navigation/native';
 const FeatureProperties = () => {
   const navigation = useNavigation()
   return (
-    <ScrollView showsHorizontalScrollIndicator={false} style={styles.container}>
-      <View style={styles.headerContainer}>
+    <View style={styles.container}>
+       <View style={styles.headerContainer}>
         <Text style={styles.headerTitle}>Featured Properties</Text>
        <TouchableOpacity onPress={ () => navigation.navigate('SearchAllPages')}>
        <View style={styles.headerRight}>
@@ -17,7 +17,10 @@ const FeatureProperties = () => {
         </View>
         </TouchableOpacity>
       </View>
+    <ScrollView showsHorizontalScrollIndicator={false}  horizontal = {true}>
+     
       {/* 01 */}
+      <View style = {{flexDirection : "row" , gap : 8}}>
      <TouchableOpacity onPress={()=>navigation.navigate('Feature Properties')}>
      <View style={styles.cardContainer}>
         <Image
@@ -49,8 +52,169 @@ const FeatureProperties = () => {
         </View>
       </View>
      </TouchableOpacity>
-      
+     {/*  */}
+     <TouchableOpacity onPress={()=>navigation.navigate('Comfortable')}>
+     <View style={styles.cardContainer}>
+        <Image
+          source={require('../assets/images/card11.jpg')}
+          style={styles.cardImage}
+        />
+        <View style={styles.cardContent}>
+          <Text style={styles.cardTitle}>Comfortable</Text>
+          <View style={styles.tagContainer}>
+            <View style={styles.tag}>
+              <Text style={styles.tagText}>Featured</Text>
+            </View>
+            <View style={styles.tag}>
+              <Text style={styles.tagText}>For Rent</Text>
+            </View>
+          </View>
+          <View style={[styles.infoContainer , {marginLeft : -6}]}>
+            <EvilIcons name='location' size={24} color='#2f5e99' />
+            <Text style={styles.infoText}>2208 Southwest Dr. Los</Text>
+          </View>
+          <View style={styles.infoContainer}>
+            <Image source={require('../assets/images/ruler.png')} style={styles.icon} />
+            <Text style={styles.infoText}>1900 Sq Ft</Text>
+          </View>
+          <View style={styles.footerContainer}>
+            <Text style={styles.footerText}>Office</Text>
+            <Text style={styles.priceText}>$21k</Text>
+          </View>
+        </View>
+      </View>
+     </TouchableOpacity>
+     {/*  */}
+     <TouchableOpacity onPress={()=>navigation.navigate('Relaxing')}>
+     <View style={styles.cardContainer}>
+        <Image
+          source={require('../assets/images/card05.jpg')}
+          style={styles.cardImage}
+        />
+        <View style={styles.cardContent}>
+          <Text style={styles.cardTitle}>Relaxing</Text>
+          <View style={styles.tagContainer}>
+            <View style={styles.tag}>
+              <Text style={styles.tagText}>Featured</Text>
+            </View>
+            <View style={styles.tag}>
+              <Text style={styles.tagText}>For Rent</Text>
+            </View>
+          </View>
+          <View style={[styles.infoContainer , {marginLeft : -6}]}>
+            <EvilIcons name='location' size={24} color='#2f5e99' />
+            <Text style={styles.infoText}>2208 Southwest Dr. Los</Text>
+          </View>
+          <View style={styles.infoContainer}>
+            <Image source={require('../assets/images/ruler.png')} style={styles.icon} />
+            <Text style={styles.infoText}>1900 Sq Ft</Text>
+          </View>
+          <View style={styles.footerContainer}>
+            <Text style={styles.footerText}>Office</Text>
+            <Text style={styles.priceText}>$4.2k</Text>
+          </View>
+        </View>
+      </View>
+     </TouchableOpacity>
+     {/*  */}
+     <TouchableOpacity onPress={()=>navigation.navigate('Design apartment')}>
+     <View style={styles.cardContainer}>
+        <Image
+          source={require('../assets/images/card03.jpg')}
+          style={styles.cardImage}
+        />
+        <View style={styles.cardContent}>
+          <Text style={styles.cardTitle}>Design Apartment</Text>
+          <View style={styles.tagContainer}>
+            <View style={styles.tag}>
+              <Text style={styles.tagText}>Featured</Text>
+            </View>
+            <View style={styles.tag}>
+              <Text style={styles.tagText}>For Rent</Text>
+            </View>
+          </View>
+          <View style={[styles.infoContainer , {marginLeft : -6}]}>
+            <EvilIcons name='location' size={24} color='#2f5e99' />
+            <Text style={styles.infoText}>2208 Southwest Dr. Los</Text>
+          </View>
+          <View style={styles.infoContainer}>
+            <Image source={require('../assets/images/ruler.png')} style={styles.icon} />
+            <Text style={styles.infoText}>1900 Sq Ft</Text>
+          </View>
+          <View style={styles.footerContainer}>
+            <Text style={styles.footerText}>Office</Text>
+            <Text style={styles.priceText}>$1.9k</Text>
+          </View>
+        </View>
+      </View>
+     </TouchableOpacity>
+     {/*  */}
+     <TouchableOpacity onPress={()=>navigation.navigate('Ample studio')}>
+     <View style={styles.cardContainer}>
+        <Image
+          source={require('../assets/images/card08.jpg')}
+          style={styles.cardImage}
+        />
+        <View style={styles.cardContent}>
+          <Text style={styles.cardTitle}>Ample Studio at</Text>
+          <View style={styles.tagContainer}>
+            <View style={styles.tag}>
+              <Text style={styles.tagText}>Featured</Text>
+            </View>
+            <View style={styles.tag}>
+              <Text style={styles.tagText}>For Rent</Text>
+            </View>
+          </View>
+          <View style={[styles.infoContainer , {marginLeft : -6}]}>
+            <EvilIcons name='location' size={24} color='#2f5e99' />
+            <Text style={styles.infoText}>2208 Southwest Dr. Los</Text>
+          </View>
+          <View style={styles.infoContainer}>
+            <Image source={require('../assets/images/ruler.png')} style={styles.icon} />
+            <Text style={styles.infoText}>1900 Sq Ft</Text>
+          </View>
+          <View style={styles.footerContainer}>
+            <Text style={styles.footerText}>Office</Text>
+            <Text style={styles.priceText}>$1.9k</Text>
+          </View>
+        </View>
+      </View>
+     </TouchableOpacity>
+     {/*  */}
+     <TouchableOpacity onPress={()=>navigation.navigate('Feature Properties')}>
+     <View style={styles.cardContainer}>
+        <Image
+          source={require('../assets/images/card09.jpg')}
+          style={styles.cardImage}
+        />
+        <View style={styles.cardContent}>
+          <Text style={styles.cardTitle}>Modern Office</Text>
+          <View style={styles.tagContainer}>
+            <View style={styles.tag}>
+              <Text style={styles.tagText}>Featured</Text>
+            </View>
+            <View style={styles.tag}>
+              <Text style={styles.tagText}>For Rent</Text>
+            </View>
+          </View>
+          <View style={[styles.infoContainer , {marginLeft : -6}]}>
+            <EvilIcons name='location' size={24} color='#2f5e99' />
+            <Text style={styles.infoText}>2208 Southwest Dr. Los</Text>
+          </View>
+          <View style={styles.infoContainer}>
+            <Image source={require('../assets/images/ruler.png')} style={styles.icon} />
+            <Text style={styles.infoText}>1900 Sq Ft</Text>
+          </View>
+          <View style={styles.footerContainer}>
+            <Text style={styles.footerText}>Office</Text>
+            <Text style={styles.priceText}>$1.9k</Text>
+          </View>
+        </View>
+      </View>
+     </TouchableOpacity>
+     </View>
     </ScrollView>
+    </View>
   );
 };
 
@@ -90,7 +254,6 @@ const styles = StyleSheet.create({
     shadowRadius: 10,
     shadowOffset: { width: 0, height: 1 },
     marginBottom: 20,
-    // elevation : 3
   },
   cardImage: {
     width: 120,
