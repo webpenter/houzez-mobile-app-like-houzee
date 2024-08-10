@@ -5,9 +5,10 @@ import EvilIcons from '@expo/vector-icons/EvilIcons';
 import { useNavigation } from '@react-navigation/native';
 
 const LatestProperties = () => {
+    
     const navigation = useNavigation();
     return (
-        <ScrollView showsHorizontalScrollIndicator={false} style={styles.container}>
+        <ScrollView  style={styles.container}>
             <View style={styles.headerContainer}>
                 <Text style={styles.headerTitle}>Latest Properties in New York</Text>
                 <TouchableOpacity onPress={() => navigation.navigate('SearchAllPages')}>
@@ -19,7 +20,7 @@ const LatestProperties = () => {
             </View>
          <View>
                {/* 01 */}
-               <TouchableOpacity>
+               <TouchableOpacity onPress={() => navigation.navigate('Design place')}>
                 <View style={styles.cardContainer}>
                     <Image
                         source={require('../assets/images/card01.jpg')}
@@ -61,7 +62,7 @@ const LatestProperties = () => {
                 </View>
             </TouchableOpacity>
             {/* 02 */}
-            <TouchableOpacity>
+            <TouchableOpacity  onPress={() => navigation.navigate('Comfortable')}>
                 <View style={styles.cardContainer}>
                     <Image
                         source={require('../assets/images/card02.jpg')}
@@ -103,7 +104,7 @@ const LatestProperties = () => {
                 </View>
             </TouchableOpacity>
             {/* 03 */}
-            <TouchableOpacity>
+            <TouchableOpacity  onPress={() => navigation.navigate('Design apartment')}>
                 <View style={styles.cardContainer}>
                     <Image
                         source={require('../assets/images/card03.jpg')}
@@ -145,7 +146,7 @@ const LatestProperties = () => {
                 </View>
             </TouchableOpacity>
             {/* 04 */}
-            <TouchableOpacity>
+            <TouchableOpacity  onPress={() => navigation.navigate('Relaxing')}>
                 <View style={styles.cardContainer}>
                     <Image
                         source={require('../assets/images/card04.jpg')}
@@ -187,7 +188,7 @@ const LatestProperties = () => {
                 </View>
             </TouchableOpacity>
             {/* 05 */}
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Ample studio')}>
                 <View style={styles.cardContainer}>
                     <Image
                         source={require('../assets/images/card05.jpg')}
@@ -229,7 +230,7 @@ const LatestProperties = () => {
                 </View>
             </TouchableOpacity>
             {/* 06 */}
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Comfortable')}>
                 <View style={styles.cardContainer}>
                     <Image
                         source={require('../assets/images/card06.jpg')}
@@ -271,7 +272,7 @@ const LatestProperties = () => {
                 </View>
             </TouchableOpacity>
             {/* 07 */}
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Renoveted studio')}>
                 <View style={styles.cardContainer}>
                     <Image
                         source={require('../assets/images/card12.jpg')}
@@ -313,7 +314,7 @@ const LatestProperties = () => {
                 </View>
             </TouchableOpacity>
             {/* 08 */}
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Specious 2-Bed')}>
                 <View style={styles.cardContainer}>
                     <Image
                         source={require('../assets/images/card05.jpg')}
@@ -355,7 +356,7 @@ const LatestProperties = () => {
                 </View>
             </TouchableOpacity>
             {/* 09 */}
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Design place')}>
                 <View style={styles.cardContainer}>
                     <Image
                         source={require('../assets/images/card08.jpg')}
@@ -397,7 +398,7 @@ const LatestProperties = () => {
                 </View>
             </TouchableOpacity>
             {/* 10 */}
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Luxurious modern')}>
                 <View style={styles.cardContainer}>
                     <Image
                         source={require('../assets/images/card09.jpg')}
@@ -439,7 +440,7 @@ const LatestProperties = () => {
                 </View>
             </TouchableOpacity>
             {/* 11 */}
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Awesome studio')}>
                 <View style={styles.cardContainer}>
                     <Image
                         source={require('../assets/images/card10.jpg')}
@@ -481,7 +482,7 @@ const LatestProperties = () => {
                 </View>
             </TouchableOpacity>
             {/* 12 */}
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Modern apartment')}>
                 <View style={styles.cardContainer}>
                     <Image
                         source={require('../assets/images/card11.jpg')}

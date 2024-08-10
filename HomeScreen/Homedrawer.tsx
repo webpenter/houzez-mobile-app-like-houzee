@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, FlatList, Image } from 'react-native';
 import Entypo from '@expo/vector-icons/Entypo';
 import EvilIcons from '@expo/vector-icons/EvilIcons';
-import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
-import Modal from 'react-native-modal';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import Modal from 'react-native-modal';
 import { useNavigation } from '@react-navigation/native';
 
 const HomeDrawer = () => {
@@ -31,8 +31,18 @@ const HomeDrawer = () => {
         { id: '3', icon: 'home', name: 'Home Location', route: 'HomeLocation' },
         { id: '4', icon: 'home', name: 'Home Tabbed', route: 'HomeTabbed' },
         { id: '5', icon: 'exclamation-circle', name: 'Blogs', route: 'Blogs' },
-        { id: '6', icon: 'inbox', name: 'Add Property', route: 'AddProperty' },
-        { id: '7', icon: 'check-circle', name: 'Quick Add Property', route: 'QuickAddProperty' },
+        { id: '6', icon: 'inbox', name: 'Add Property', route: 'Login' },
+        { id: '7', icon: 'plus-circle', name: 'Quick Add Property', route: 'Login' },
+        { id: '8', icon: 'building', name: 'Properties', route: 'Login' },
+        // { id: '9', icon: 'user-tie', name: 'Agents', route: 'Agents' },
+        { id: '10', icon: 'building-o', name: 'Agencies', route: 'Login' },
+        { id: '11', icon: 'exclamation-circle', name: 'Properties Request', route: 'Login' },
+        { id: '12', icon: 'heart', name: 'Favourite', route: 'Login' },
+        { id: '13', icon: 'save', name: 'Saved Searches', route: 'Login' },
+        { id: '14', icon: 'exclamation-circle', name: 'CRM Dashboard',},
+        { id: '15', icon: 'cog', name: 'Settings', route: 'Settings & Privacy' },
+        { id: '16', icon: 'address-book', name: 'Contact Us', route: 'Contact Us' },
+        { id: '17', icon: 'sign-in', name: 'Login', route: 'Login' },
     ];
 
     return (
@@ -41,13 +51,13 @@ const HomeDrawer = () => {
                 <Entypo name="menu" size={24} color="black" />
                 <View style={styles.locationContainer}>
                     <Text style={styles.currentLocationText}>Current Location</Text>
-                  <TouchableOpacity onPress={() => navigation.navigate('Select Location')}>
-                  <View style={styles.locationDetails}>
-                        <FontAwesome6 name="location-dot" size={14} color="#2f5e99" />
-                        <Text style={styles.locationText}>Please Select</Text>
-                        <EvilIcons name="chevron-down" size={24} color="#2f5e99" />
-                    </View>
-                  </TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('SelectLocation')}>
+                        <View style={styles.locationDetails}>
+                            <FontAwesome5 name="map-marker-alt" size={14} color="#2f5e99" />
+                            <Text style={styles.locationText}>Please Select</Text>
+                            <EvilIcons name="chevron-down" size={24} color="#2f5e99" />
+                        </View>
+                    </TouchableOpacity>
                 </View>
             </TouchableOpacity>
 
@@ -95,11 +105,11 @@ const styles = StyleSheet.create({
     locationDetails: {
         flexDirection: 'row',
         alignItems: 'center',
-        gap: 4,
     },
     locationText: {
         fontWeight: '600',
         fontSize: 14,
+        marginLeft: 4,
     },
     modal: {
         justifyContent: 'flex-end',

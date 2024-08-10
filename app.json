@@ -4,14 +4,13 @@
     "slug": "Houzezfile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/Hamza.jpg",
     "scheme": "myApp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/logo.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#2f5e99"
-    },
+      "image": "./assets/images/Hamza.jpg",
+      "resizeMode": "contain"
+        },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.hamzariazexpoeaslogin.Houzezfile"
@@ -29,7 +28,13 @@
       "favicon": "./assets/images/Hamza.jpg"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts": ["../assets/fonts/OpenSans_Condensed-Bold.ttf"]
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true

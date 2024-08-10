@@ -6,6 +6,12 @@ import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import { useNavigation } from '@react-navigation/native';
 import FeatureDetailBedroom from './FeatureDetailBedroom';
 import ListDetails from './ListDetails';
+import FeatureAircon from './FeatureAircon';
+import Mapview from './Mapview';
+import FloorPlans from './FloorPlans';
+import ContactInformation from './ContactInformation';
+import Review from './Review';
+import TwoCard from './Twocard';
 
 const FeaturePropertiesMainDetail = () => {
     const navigation = useNavigation();
@@ -47,9 +53,16 @@ const FeaturePropertiesMainDetail = () => {
           </View>
           <Text style={styles.price}>$25,000/mo</Text>
         </View>
-          {/* navigationpage */}
+           <View>
            <FeatureDetailBedroom/>
-            {/* <ListDetails/> */}
+           <ListDetails/>
+            <FeatureAircon/>
+            <Mapview/>
+            <FloorPlans/>
+            <ContactInformation/>
+            <Review/>
+            <TwoCard/>
+           </View>
       </ScrollView>
     </View>
   );
@@ -61,7 +74,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor : "white",
-    marginTop : 28
+    // marginTop : 28
   },
   scrollView: {
     flexGrow: 1,

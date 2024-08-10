@@ -23,6 +23,15 @@ export default function TabLayout() {
           ),
         }}
       />
+       <Tabs.Screen
+        name="Search"
+        options={{
+          title: 'Search',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'search' : 'search-outline'} size={26} color={color} />
+          ),
+        }}
+      />
      <Tabs.Screen
         name="Saved"
         options={{
@@ -37,7 +46,7 @@ export default function TabLayout() {
         options={{
           title: 'Profile',
           tabBarIcon: ({ color, focused }) => (
-            <MaterialIcons name={focused ? 'verified-user' : 'supervised-user-circle'} size={26} color={color} />
+            <MaterialIcons name={focused ? 'supervised-user-circle' : 'verified-user'} size={26} color={color} />
           ),
         }}
       />
