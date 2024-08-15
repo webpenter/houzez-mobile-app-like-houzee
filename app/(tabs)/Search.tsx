@@ -7,7 +7,6 @@ import Filters from '@/components/searchtabbar/newfilters'
 const Search = () => {
     const Stack = createNativeStackNavigator()
   return (
-    <NavigationContainer>
         <Stack.Navigator>
             <Stack.Screen name='Filters' component={Filters}/>
         </Stack.Navigator>

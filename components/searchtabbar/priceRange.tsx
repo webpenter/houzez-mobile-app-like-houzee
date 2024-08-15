@@ -1,6 +1,5 @@
 import React, { useState, useCallback } from 'react';
 import { View, Text, TextInput, StyleSheet } from 'react-native';
-import RangeSlider from 'rn-range-slider';
 import { Foundation } from '@expo/vector-icons';
 
 const Thumb = () => <View style={styles.thumb} />;
