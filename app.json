@@ -8,7 +8,7 @@
     "scheme": "myApp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/Hamza.jpg",
+      "image": "./assets/images/1.jpg",
       "resizeMode": "contain"
         },
     "ios": {

@@ -1,33 +1,20 @@
-// import React from 'react';
-// import { StyleSheet, Text, View } from 'react-native';
-// import { useFonts } from 'expo-font';
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import { NavigationContainer } from '@react-navigation/native'
+import Filters from '@/components/searchtabbar/newfilters'
 
-// const Search = () => {
-//   const [fontsLoaded] = useFonts({
-//     'OpenSans_Condensed-Bold': require('../../assets/fonts/assets/fonts/OpenSans_Condensed-Bold.ttf'), 
-//   });
+const Search = () => {
+    const Stack = createNativeStackNavigator()
+  return (
+    <NavigationContainer independent  = {true}>
+        <Stack.Navigator>
+            <Stack.Screen name='Filters' component={Filters}/>
+        </Stack.Navigator>
+    </NavigationContainer>
+  )
+}
 
-//   if (!fontsLoaded) {
-//     return (
-//         <View>
-//             <Text>Loading...</Text>
-//         </View>
-//     );
-//   }
+export default Search
 
-//   return (
-//     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-//       <Text style={styles.text}>Search</Text>
-//     </View>
-//   );
-// };
-
-// export default Search;
-
-// const styles = StyleSheet.create({ 
-//   text: {
-//     fontSize: 20,
-//     fontWeight: '600',
-//     fontFamily: 'OpenSans_Condensed-Bold',
-//   },
-// });
+const styles = StyleSheet.create({})
